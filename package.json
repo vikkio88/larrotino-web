@@ -13,7 +13,7 @@
   },
   "scripts": {
     "dev": "next",
-    "build": "next build",
+    "build": "next build && node scripts/buildSitemap.js",
     "start": "next start",
     "export": "npm run build && next export",
     "buildDeploy": "npm run export && surge out/ --domain larrotino.surge.sh"
