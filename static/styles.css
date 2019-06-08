@@ -1,0 +1,196 @@
+
+/**
+https://codepen.io/tutsplus/pen/MzOqbK
+**/
+@import url("https://fonts.googleapis.com/css?family=Dosis:400,700");
+
+:root {
+  --main-white-color: #f2f2f2;
+  --main-black-color: black;
+  --main-purple-color: #6b3baa;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+button {
+  background: none;
+  outline: none;
+  cursor: pointer;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+body {
+  font: 16px/1.5 "Dosis", sans-serif;
+  /*IE FIX*/
+  /*display: flex;
+  flex-direction: column;*/
+}
+
+/* CONTAINER
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.wrapper > * {
+  padding: 20px;
+}
+
+
+/* HEADER
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.page-header {
+  background: var(--main-white-color);
+}
+.page-header nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.page-header ul {
+  display: flex;
+  order: 1;
+  width: 100%;
+  margin-top: 15px;
+}
+
+.page-header ul li:not(:last-child) {
+  padding-right: 15px;
+}
+
+.page-header .cta {
+  font-family: inherit;
+  font-size: 1.2rem;
+  padding: 5px 18px;
+  border: 1px solid;
+  border-radius: 5px;
+}
+
+
+/* MAIN
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.page-main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-grow: 1;
+  min-height: 350px;
+  background: var(--main-purple-color);
+  background-blend-mode: luminosity;
+  color: var(--main-white-color);
+}
+
+.page-main div {
+  max-width: 700px;
+}
+
+.page-main h1 {
+  margin-bottom: 20px;
+}
+
+.page-main p + p {
+  margin-top: 10px;
+}
+
+
+/* FOOTER
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.page-footer {
+  display: flex;
+  flex-direction: column-reverse;
+  background: var(--main-white-color);
+}
+
+.page-footer ul {
+  display: flex;
+  font-size: 1.5rem;
+  margin-bottom: 5px;
+}
+
+.page-footer ul li:not(:last-child) {
+  margin-right: 20px;
+}
+
+
+@media screen and (min-width: 550px) {
+  .page-header ul {
+    width: auto;
+    margin-top: 0;
+  }
+
+  .page-header .cta {
+    order: 1;
+  }
+
+  .page-footer {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .page-footer ul {
+    margin-bottom: 0;
+  }
+}
+
+.active-link {
+    border-bottom: solid 1px #a5a5a5;
+}
+
+.podcast {
+    border: solid 1px #a5a5a5;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    padding: 20px;
+}
+
+.notes {
+    margin-top: 10px;
+}
+
+.notes ul {
+    padding-left: 5px;
+    list-style: circle;
+}
+
+.section h1 {
+    margin-top: 40px; 
+}
+
+.icon {
+    height: 20px;
+}
+
+.icon-sm {
+    height: 10px;
+}
+
+main a {
+    text-decoration: underline;
+}
+
+@media screen and (min-width: 768px) {
+  body {
+    font-size: 18px;
+  }
+
+  .page-main {
+    padding-left: 90px;
+  }
+}
