@@ -1,7 +1,11 @@
 import Link from 'next/link';
+import { SPREAKER_LINK } from '../const';
 
-const play = () => {
+const scootalite = () => {
     window.open("https://scootalite.surge.sh/podcasts/larrotino2019-06-04-0049-if5mc");
+};
+const spreaker = () => {
+    window.open(SPREAKER_LINK);
 };
 
 export default () => {
@@ -20,7 +24,7 @@ export default () => {
                         <Link href="/static/feed.xml">RSS</Link>
                     </li>
                 </ul>
-                <button className="cta" onClick={play}>Ascolta</button>
+                <button className="cta" onClick={spreaker}>Spreaker</button>
             </nav>
         </header>
     );

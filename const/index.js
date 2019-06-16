@@ -1,0 +1,1 @@
+export const SPREAKER_LINK = 'https://www.spreaker.com/show/larrotino';

@@ -1,5 +1,6 @@
 import Head from 'next/head';
 import Page from '../layouts';
+import { SPREAKER_LINK } from '../const';
 
 export default () => {
     return (
@@ -15,6 +16,8 @@ export default () => {
                     <p>Vede la luce a Giugno 2019, con un episodio registrato con un microfono orribile, e chissà se mai
                     continuerà.</p>
                     <p><a href="./">Qui</a> puoi trovare una lista degli episodi pubblicati fino ad ora</p>
+                    <p><a href={SPREAKER_LINK}>Qui</a> puoi trovare lo show su <strong>Spreaker</strong></p>
+
                 </div>
 
                 <div className="section">
