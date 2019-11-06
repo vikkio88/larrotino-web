@@ -1,6 +1,6 @@
 import Head from 'next/head';
 import Page from '../layouts';
-import { SPREAKER_LINK } from '../const';
+import { SPREAKER_LINK, YOUTUBE_LINK } from '../const';
 
 export default () => {
     return (
@@ -17,6 +17,7 @@ export default () => {
                     continuerà.</p>
                     <p><a href="./">Qui</a> puoi trovare una lista degli episodi pubblicati fino ad ora</p>
                     <p><a href={SPREAKER_LINK}>Qui</a> puoi trovare lo show su <strong>Spreaker</strong></p>
+                    <p><a href={YOUTUBE_LINK}>Qui</a> puoi trovare lo show su <strong>Yuotube</strong></p>
 
                 </div>
 

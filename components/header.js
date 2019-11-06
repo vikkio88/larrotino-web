@@ -1,11 +1,15 @@
 import Link from 'next/link';
-import { SPREAKER_LINK } from '../const';
+import Icon from './Icon';
+import { SPREAKER_LINK, YOUTUBE_LINK } from '../const';
 
 const scootalite = () => {
     window.open("https://scootalite.surge.sh/podcasts/larrotino2019-06-04-0049-if5mc");
 };
 const spreaker = () => {
     window.open(SPREAKER_LINK);
+};
+const youtube = () => {
+    window.open(YOUTUBE_LINK);
 };
 
 export default () => {
@@ -21,10 +25,13 @@ export default () => {
                         <Link href="/about">About</Link>
                     </li>
                     <li>
-                        <Link href="/static/feed.xml">RSS</Link>
+                        <Link href="/static/feed.xml"><Icon name="rss" link/></Link>
                     </li>
                 </ul>
-                <button className="cta" onClick={spreaker}>Spreaker</button>
+                <div className="cta-wrapper">
+                    <button className="cta" onClick={youtube}><Icon name="youtube"/> Youtube</button>
+                    <button className="cta" onClick={spreaker}><Icon name="spreaker"/> Spreaker</button>
+                </div>
             </nav>
         </header>
     );
